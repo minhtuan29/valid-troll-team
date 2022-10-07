@@ -1,5 +1,5 @@
 # Valid troll team
-## Demo : https://minhtuan29.github.io/valid-troll-team  
+## Demo Online : https://minhtuan29.github.io/valid-troll-team  
   
 # Tác giả
 Hoàng Minh Tuấn
