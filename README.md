@@ -1,9 +1,6 @@
-# Valid troll team
-## Test Online : https://minhtuan29.github.io/valid-troll-team  
+# Test Online : https://minhtuan29.github.io/valid-troll-team  
   
-
 https://user-images.githubusercontent.com/86332370/194642978-0250aeef-ceeb-41ff-8373-ccdcdeac0dee.mp4
-
 
 # Tác giả
 Hoàng Minh Tuấn
