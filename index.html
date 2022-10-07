@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valid troll team</title>
+
+    <style>
+        body {
+            font-size: 50px;
+            padding: 3em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p> Type the password</p>
+    <input type="password" style="height: 2em; width: 8em;
+    border: 5px dimgray solid;
+    border-radius: .3em;
+    padding-left: .3em;
+     font-size: 1.2em;" id="userPassword">
+
+    <br>
+    <input type="submit" id="submitBtn" style="height: 5em; 
+    width: 10em; 
+    margin-top: 5em; 
+    margin-left: 3em;
+    transition: 0.25s ease;">
+
+
+    <script>
+        let validFlag = false;
+
+
+        //=====================================//
+        let userPassword = document.getElementById("userPassword");
+
+        function borderRed() {
+            userPassword.style.borderColor = "darksalmon";
+            userPassword.style.outline = "solid darksalmon";
+        }
+
+        function borderGreen() {
+            userPassword.style.borderColor = "palegreen";
+            userPassword.style.outline = "solid palegreen";
+
+        }
+
+        function changeColorAndValidFlag() {
+            if (userPassword.value.length < 8) {
+                borderRed();
+                validFlag = false;
+            } else {
+                borderGreen();
+                validFlag = true;
+            }
+        }
+
+        function resetBorderColor() {
+            userPassword.style.borderColor = "dimgray";
+            userPassword.style.outline = "dimgray";
+        }
+
+
+        userPassword.oninput = () => {
+            if (userPassword.value.length > 0) {
+                changeColorAndValidFlag();
+            } else {
+                resetBorderColor();
+            }
+        }
+
+
+        //=============================================//
+        let submitBtn = document.getElementById("submitBtn");
+        let submitBtnFlag = false;
+
+        function submitBtnMove() {
+            submitBtnFlag = !submitBtnFlag;
+            if (submitBtnFlag) {
+                submitBtn.style.marginLeft = "15em";
+            } else {
+                submitBtn.style.marginLeft = "2em";
+            }
+        }
+
+        submitBtn.onmouseover = () => {
+            if (validFlag === false) {
+                submitBtnMove();
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
