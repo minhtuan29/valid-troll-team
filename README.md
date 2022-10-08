@@ -1,6 +1,6 @@
 ## Test Online : https://minhtuan29.github.io/valid-troll-team  
  
-# Tác giả
+# Tác giả source code
 ## Hoàng Minh Tuấn
 # Sharing
 Nếu thấy hay thì bạn hãy ủng hộ kênh Youtube fullstack FE-BE-AI-MC-Game của mình để học tập giao lưu nhé ^  
